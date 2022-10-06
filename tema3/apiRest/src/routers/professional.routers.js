@@ -1,11 +1,11 @@
 const {Router} = require("express");
 const router = Router();
-const usersCtrl = require("../controller/professional.controller");
+const professionalCtrl = require("../controller/professional.controller");
 
-router.get("/", usersCtrl.getStart);
-router.get("/professional", usersCtrl.getProfessional);
-router.post("/professional", usersCtrl.postProfessional);
-router.put("/professional", usersCtrl.putProfessional);
-router.delete("/professional", usersCtrl.deleteProfessional);
+router.get("/", professionalCtrl.getStart);
+router.get("/professional", professionalCtrl.getProfessional);
+router.post("/professional", professionalCtrl.postProfessional);
+router.put("/professional", professionalCtrl.putProfessional);
+router.delete("/professional", professionalCtrl.deleteProfessional);
 
 module.exports = router;
