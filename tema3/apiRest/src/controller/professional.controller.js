@@ -1,6 +1,6 @@
 const {Professional} = require("../helpers/professional");
 
-let professional = null; //new Professional("Tom", "Cruise", "actor", "estadounidense", 3);
+let professional = null; 
 
 const getStart = (req, resp) =>
 {
@@ -55,7 +55,7 @@ const putProfessional = (req, resp) =>
     {
         professional.fistName = req.body.nombre;
         professional.lastName = req.body.apellido;
-        professional.proffesion = req.body.profesion;
+        professional.profession = req.body.profession;
         professional.nationality = req.body.nacionalidad;
         professional.oscarsNumber = req.body.numeroOscars;
 

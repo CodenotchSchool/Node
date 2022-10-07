@@ -1,10 +1,10 @@
 class Professional
 {
-    constructor(fistName, lastName, proffesion, nationality, oscarsNumber)
+    constructor(fistName, lastName, profession, nationality, oscarsNumber)
     {
-        this.fistName = fistName;
+        this.firstName = fistName;
         this.lastName = lastName;
-        this.proffesion = proffesion;
+        this.profession = profession;
         this.nationality = nationality;
         this.oscarsNumber = oscarsNumber;
     }
