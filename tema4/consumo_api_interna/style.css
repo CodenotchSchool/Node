@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --backgroud: #2d9f91;
+    --white: #fff;
+}
+
+body{
+    background: var(--backgroud);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 15vh;
+    width: 100vw;
+    color: var(--white);
+}
+
+
+main{
+    min-height: 50vh;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+}
+
+main .form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background: var(--white);
+    padding: 30px 15px 30px;
+    gap: 30px;
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    height: 250px;
+    width: 350px;
+}
+
+main .form form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+main .form form input[type="text"],main form input[type="number"]{
+    border: none;
+    height: 20px;
+    padding: 6px;
+    border-radius: 4px;
+    background: var(--backgroud);
+    color: var(--white);
+}
+
+main .form form input::placeholder { 
+    color: var(--white); 
+}
+main .form .btns{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .form .btns button{
+    padding: 8px;
+    background: var(--white);
+    color: var(--backgroud);
+    border: solid var(--backgroud) 2px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 35px;
+    width: 80px;
+}
+
+main .form .btns button:hover{
+    background: var(--backgroud);
+    color: var(--white);
+    border: none;
+}
+
+section{
+    width: 100vw;
+    min-height: 50vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+section .card-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 275px;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+section .card-container .card{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    width: 300px;
+    background: var(--white);
+    box-shadow: -30px 30px 20px rgba(0,0,0,0.3);
+    padding: 10px;
+}
+
+section .card-container .card ul li{
+    list-style: none;
+}
