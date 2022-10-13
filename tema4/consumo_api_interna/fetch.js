@@ -44,14 +44,15 @@ const geProfessionals = async () =>
         let result = await data.json();
         console.log(result);
 
+        document.getElementById("section").innerHTML = ""
         for (let dato of result) 
         {
             document.getElementById("section").innerHTML += 
                     ` <div class="card-container"> ` +
                     `  <div class="card">` +
-                         `<h3> ${dato.fistName}  ${dato.lastName} </h3>` +
+                         `<h3> ${dato.firstName}  ${dato.lastName} </h3>` +
                           `<ul>` +
-                          `<li>Profesión: ${dato.proffesion} </li>` +
+                          `<li>Profesión: ${dato.profession} </li>` +
                           `<li>Nacionalidad: ${dato.nationality} </li>` +
                           `<li>Oscars:  ${dato.oscarsNumber}  </li>`+
                           `</ul>`+
