@@ -10,7 +10,7 @@ const getProfessionals = (req, resp) =>
     {
         if (req.query.pos < professionals.length)
         {
-            respuesta = professionals[req.query.pos]
+            respuesta = [professionals[req.query.pos]]
         }
         else
         {
