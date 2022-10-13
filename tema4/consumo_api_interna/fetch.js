@@ -39,7 +39,7 @@ const geProfessionals = async () =>
     }
 
     try
-    {
+    { 
         let data = await fetch(URL, param);
         let result = await data.json();
         console.log(result);
